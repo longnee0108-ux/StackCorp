@@ -1,0 +1,14 @@
+.godot/
+.tools/
+.qa/
+.runtime/
+/export_templates/
+/feature_profiles/
+/script_templates/
+/text_editor_themes/
+builds/
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+

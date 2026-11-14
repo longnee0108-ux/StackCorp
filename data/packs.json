@@ -1,0 +1,178 @@
+{
+  "founding_team": {
+    "id": "founding_team",
+    "price": 4,
+    "phase": 1,
+    "count": 3,
+    "guarantee": [
+      "candidate_dev",
+      "candidate_designer",
+      "candidate_sales"
+    ],
+    "pool": {
+      "candidate_intern": 35,
+      "candidate_dev": 25,
+      "candidate_sales": 20,
+      "candidate_designer": 20
+    },
+    "name_key": "packs.founding_team.name"
+  },
+  "garage_gear": {
+    "id": "garage_gear",
+    "price": 4,
+    "phase": 1,
+    "count": 3,
+    "guarantee": [
+      "whiteboard",
+      "bank_card",
+      "coffee_machine",
+      "bank_counter",
+      "office_safe"
+    ],
+    "pool": {
+      "laptop_old": 20,
+      "desk": 15,
+      "coffee_machine": 15,
+      "whiteboard": 10,
+      "marker": 25,
+      "coffee_beans": 15
+    },
+    "name_key": "packs.garage_gear.name"
+  },
+  "early_leads": {
+    "id": "early_leads",
+    "price": 3,
+    "phase": 1,
+    "count": 3,
+    "pool": {
+      "freelance_contract": 40,
+      "difficult_client": 15,
+      "bug": 25,
+      "coffee": 20
+    },
+    "name_key": "packs.early_leads.name"
+  },
+  "pitch_night": {
+    "id": "pitch_night",
+    "price": 8,
+    "phase": 1,
+    "count": 3,
+    "guarantee": [
+      "investor"
+    ],
+    "pool": {
+      "investor": 20,
+      "idea": 50,
+      "marker": 30
+    },
+    "name_key": "packs.pitch_night.name"
+  },
+  "operations": {
+    "id": "operations",
+    "price": 12,
+    "phase": 2,
+    "count": 3,
+    "guarantee": [
+      "candidate_accountant",
+      "candidate_senior_dev",
+      "candidate_lawyer",
+      "candidate_hr",
+      "lease_floor"
+    ],
+    "pool": {
+      "candidate_team_leader": 15,
+      "candidate_accountant": 20,
+      "candidate_hr": 15,
+      "shredder": 15,
+      "candidate_lawyer": 15,
+      "candidate_senior_dev": 15,
+      "candidate_marketing": 5
+    },
+    "name_key": "packs.operations.name"
+  },
+  "perks": {
+    "id": "perks",
+    "price": 10,
+    "phase": 2,
+    "count": 3,
+    "guarantee": [
+      "pantry",
+      "ergo_chair"
+    ],
+    "pool": {
+      "ergo_chair": 25,
+      "pantry": 25,
+      "insurance": 15,
+      "team_ticket": 20,
+      "coffee": 15
+    },
+    "name_key": "packs.perks.name"
+  },
+  "market_crisis": {
+    "id": "market_crisis",
+    "price": 15,
+    "phase": 2,
+    "count": 3,
+    "risky": true,
+    "pool": {
+      "million_contract": 30,
+      "freelance_contract": 25,
+      "difficult_client": 20,
+      "bug": 15,
+      "coffee": 10
+    },
+    "name_key": "packs.market_crisis.name"
+  },
+  "logistics": {
+    "id": "logistics",
+    "price": 20,
+    "phase": 2,
+    "count": 2,
+    "guarantee": [
+      "plane_ticket",
+      "truck"
+    ],
+    "pool": {
+      "plane_ticket": 30,
+      "truck": 30,
+      "bank_card": 20,
+      "lease_floor": 20
+    },
+    "name_key": "packs.logistics.name"
+  },
+  "automation": {
+    "id": "automation",
+    "price": 50,
+    "phase": 3,
+    "count": 3,
+    "guarantee": [
+      "server_cloud",
+      "candidate_ai_agent",
+      "assembly_line"
+    ],
+    "pool": {
+      "server_cloud": 30,
+      "candidate_ai_agent": 25,
+      "assembly_line": 25,
+      "power_backup": 20
+    },
+    "name_key": "packs.automation.name"
+  },
+  "wall_street": {
+    "id": "wall_street",
+    "price": 100,
+    "phase": 3,
+    "count": 3,
+    "risky": true,
+    "guarantee": [
+      "weakened_rival",
+      "candidate_lobbyist"
+    ],
+    "pool": {
+      "weakened_rival": 40,
+      "candidate_lobbyist": 25,
+      "idea": 35
+    },
+    "name_key": "packs.wall_street.name"
+  }
+}

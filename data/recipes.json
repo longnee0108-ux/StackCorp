@@ -1,0 +1,581 @@
+[
+  {
+    "id": "r_concept",
+    "root": "whiteboard",
+    "inputs": [
+      "#worker",
+      "marker"
+    ],
+    "consumes": [
+      "marker"
+    ],
+    "outputs": [
+      "concept"
+    ],
+    "time": 30,
+    "stress": 1,
+    "idea": "",
+    "phase": 1,
+    "name_key": "recipes.r_concept.name"
+  },
+  {
+    "id": "r_idea",
+    "root": "whiteboard",
+    "inputs": [
+      "founder"
+    ],
+    "consumes": [],
+    "outputs": [
+      "idea"
+    ],
+    "time": 45,
+    "stress": 1,
+    "idea": "",
+    "phase": 1,
+    "name_key": "recipes.r_idea.name"
+  },
+  {
+    "id": "r_proto",
+    "root": "laptop_old",
+    "inputs": [
+      "#builder",
+      "concept"
+    ],
+    "consumes": [
+      "concept"
+    ],
+    "outputs": [
+      "prototype"
+    ],
+    "time": 40,
+    "stress": 1,
+    "idea": "",
+    "phase": 1,
+    "name_key": "recipes.r_proto.name"
+  },
+  {
+    "id": "r_polish",
+    "root": "prototype",
+    "inputs": [
+      "#designer"
+    ],
+    "consumes": [
+      "prototype"
+    ],
+    "outputs": [
+      "polished_prototype"
+    ],
+    "time": 30,
+    "stress": 1,
+    "idea": "polish",
+    "phase": 1,
+    "name_key": "recipes.r_polish.name"
+  },
+  {
+    "id": "r_deal",
+    "root": "polished_prototype",
+    "inputs": [
+      "#sales",
+      "freelance_contract"
+    ],
+    "consumes": [
+      "polished_prototype",
+      "freelance_contract"
+    ],
+    "outputs": [
+      "signed_deal"
+    ],
+    "time": 30,
+    "stress": 1,
+    "idea": "close_deal",
+    "phase": 1,
+    "name_key": "recipes.r_deal.name"
+  },
+  {
+    "id": "r_gig",
+    "root": "laptop_old",
+    "inputs": [
+      "#worker",
+      "freelance_contract"
+    ],
+    "consumes": [
+      "freelance_contract"
+    ],
+    "outputs": [],
+    "cash": 8,
+    "time": 30,
+    "stress": 1,
+    "idea": "",
+    "phase": 1,
+    "name_key": "recipes.r_gig.name"
+  },
+  {
+    "id": "r_emergency",
+    "root": "laptop_old",
+    "inputs": [
+      "founder",
+      "emergency_client"
+    ],
+    "consumes": [
+      "emergency_client"
+    ],
+    "outputs": [],
+    "cash": 8,
+    "time": 30,
+    "stress": 1,
+    "idea": "",
+    "phase": 1,
+    "name_key": "recipes.r_emergency.name"
+  },
+  {
+    "id": "r_difficult",
+    "root": "laptop_old",
+    "inputs": [
+      "#worker",
+      "difficult_client"
+    ],
+    "consumes": [
+      "difficult_client"
+    ],
+    "outputs": [],
+    "cash": 15,
+    "time": 40,
+    "stress": 2,
+    "idea": "",
+    "phase": 1,
+    "name_key": "recipes.r_difficult.name"
+  },
+  {
+    "id": "r_coffee",
+    "root": "coffee_machine",
+    "inputs": [
+      "coffee_beans"
+    ],
+    "consumes": [
+      "coffee_beans"
+    ],
+    "outputs": [
+      "coffee"
+    ],
+    "time": 25,
+    "stress": 0,
+    "idea": "brew",
+    "phase": 1,
+    "name_key": "recipes.r_coffee.name"
+  },
+  {
+    "id": "r_pantry",
+    "root": "pantry",
+    "inputs": [
+      "#person"
+    ],
+    "consumes": [],
+    "outputs": [],
+    "effect": "pantry",
+    "time": 15,
+    "stress": 0,
+    "idea": "pantry",
+    "phase": 2,
+    "name_key": "recipes.r_pantry.name"
+  },
+  {
+    "id": "r_bug",
+    "root": "bug",
+    "inputs": [
+      "#developer"
+    ],
+    "consumes": [],
+    "outputs": [],
+    "effect": "bug",
+    "time": 5,
+    "stress": 0,
+    "idea": "",
+    "phase": 1,
+    "name_key": "recipes.r_bug.name"
+  },
+  {
+    "id": "r_ai_bug",
+    "root": "ai_hallucination",
+    "inputs": [
+      "#developer"
+    ],
+    "consumes": [],
+    "outputs": [],
+    "effect": "bug",
+    "time": 5,
+    "stress": 0,
+    "idea": "",
+    "phase": 3,
+    "name_key": "recipes.r_ai_bug.name"
+  },
+  {
+    "id": "r_fixbug",
+    "root": "#buggy",
+    "inputs": [
+      "#developer"
+    ],
+    "consumes": [],
+    "outputs": [],
+    "effect": "repair",
+    "time": 20,
+    "stress": 0,
+    "idea": "",
+    "phase": 1,
+    "name_key": "recipes.r_fixbug.name"
+  },
+  {
+    "id": "r_pitch",
+    "root": "whiteboard",
+    "inputs": [
+      "#designer",
+      "polished_prototype",
+      "concept",
+      "concept"
+    ],
+    "consumes": [
+      "polished_prototype",
+      "concept",
+      "concept"
+    ],
+    "outputs": [
+      "pitch_deck"
+    ],
+    "time": 50,
+    "stress": 1,
+    "idea": "pitch_deck",
+    "phase": 1,
+    "name_key": "recipes.r_pitch.name"
+  },
+  {
+    "id": "r_series_a",
+    "root": "founder",
+    "inputs": [
+      "pitch_deck",
+      "investor",
+      "polished_prototype"
+    ],
+    "consumes": [
+      "pitch_deck",
+      "investor",
+      "polished_prototype"
+    ],
+    "outputs": [
+      "term_sheet"
+    ],
+    "effect": "series_a",
+    "time": 60,
+    "stress": 0,
+    "idea": "series_a",
+    "phase": 1,
+    "name_key": "recipes.r_series_a.name"
+  },
+  {
+    "id": "r_overclock",
+    "root": "founder",
+    "inputs": [
+      "coffee",
+      "coffee",
+      "coffee"
+    ],
+    "consumes": [
+      "coffee",
+      "coffee",
+      "coffee"
+    ],
+    "outputs": [],
+    "effect": "overclock",
+    "time": 5,
+    "stress": 0,
+    "idea": "overclock",
+    "phase": 1,
+    "name_key": "recipes.r_overclock.name"
+  },
+  {
+    "id": "r_sub",
+    "root": "laptop_old",
+    "inputs": [
+      "#senior",
+      "#designer",
+      "concept"
+    ],
+    "consumes": [
+      "concept"
+    ],
+    "outputs": [
+      "subscription"
+    ],
+    "time": 50,
+    "stress": 1,
+    "idea": "saas",
+    "phase": 2,
+    "name_key": "recipes.r_sub.name"
+  },
+  {
+    "id": "r_ent",
+    "root": "subscription",
+    "inputs": [
+      "#sales",
+      "lawyer"
+    ],
+    "consumes": [
+      "subscription"
+    ],
+    "outputs": [
+      "enterprise_license"
+    ],
+    "time": 40,
+    "stress": 1,
+    "idea": "enterprise",
+    "phase": 2,
+    "name_key": "recipes.r_ent.name"
+  },
+  {
+    "id": "r_ledger",
+    "root": "accountant",
+    "inputs": [
+      "receipt",
+      "receipt",
+      "receipt",
+      "receipt",
+      "receipt",
+      "receipt",
+      "receipt",
+      "receipt",
+      "receipt",
+      "receipt"
+    ],
+    "consumes": [
+      "receipt",
+      "receipt",
+      "receipt",
+      "receipt",
+      "receipt",
+      "receipt",
+      "receipt",
+      "receipt",
+      "receipt",
+      "receipt"
+    ],
+    "outputs": [
+      "ledger_folder"
+    ],
+    "time": 20,
+    "stress": 0,
+    "idea": "ledger",
+    "phase": 2,
+    "name_key": "recipes.r_ledger.name"
+  },
+  {
+    "id": "r_shred",
+    "root": "shredder",
+    "inputs": [
+      "receipt"
+    ],
+    "consumes": [
+      "receipt"
+    ],
+    "outputs": [
+      "black_fund"
+    ],
+    "effect": "shred",
+    "time": 5,
+    "stress": 0,
+    "idea": "shredder",
+    "phase": 2,
+    "name_key": "recipes.r_shred.name"
+  },
+  {
+    "id": "r_inspect",
+    "root": "inspector",
+    "inputs": [
+      "#legal"
+    ],
+    "consumes": [],
+    "outputs": [],
+    "effect": "inspection",
+    "time": 5,
+    "stress": 0,
+    "idea": "",
+    "phase": 2,
+    "name_key": "recipes.r_inspect.name"
+  },
+  {
+    "id": "r_lawsuit",
+    "root": "lawsuit",
+    "inputs": [
+      "lawyer"
+    ],
+    "consumes": [
+      "lawsuit"
+    ],
+    "outputs": [],
+    "time": 30,
+    "stress": 0,
+    "idea": "",
+    "phase": 2,
+    "name_key": "recipes.r_lawsuit.name"
+  },
+  {
+    "id": "r_expand",
+    "root": "lease_floor",
+    "inputs": [
+      "founder"
+    ],
+    "consumes": [
+      "lease_floor"
+    ],
+    "outputs": [],
+    "effect": "expand",
+    "cost": 250,
+    "time": 20,
+    "stress": 0,
+    "idea": "expand",
+    "phase": 2,
+    "name_key": "recipes.r_expand.name"
+  },
+  {
+    "id": "r_branch",
+    "root": "plane_ticket",
+    "inputs": [
+      "founder"
+    ],
+    "consumes": [
+      "plane_ticket"
+    ],
+    "outputs": [
+      "gateway"
+    ],
+    "effect": "branch",
+    "cost": 300,
+    "time": 30,
+    "stress": 0,
+    "idea": "branch",
+    "phase": 2,
+    "name_key": "recipes.r_branch.name"
+  },
+  {
+    "id": "r_ipo",
+    "root": "founder",
+    "inputs": [
+      "lawyer",
+      "accountant",
+      "term_sheet",
+      "ledger_folder",
+      "ledger_folder",
+      "ledger_folder"
+    ],
+    "consumes": [
+      "term_sheet",
+      "ledger_folder",
+      "ledger_folder",
+      "ledger_folder"
+    ],
+    "outputs": [
+      "stock_price"
+    ],
+    "effect": "ipo",
+    "time": 90,
+    "stress": 0,
+    "idea": "ipo",
+    "phase": 2,
+    "name_key": "recipes.r_ipo.name"
+  },
+  {
+    "id": "r_ai",
+    "root": "server_cloud",
+    "inputs": [
+      "#low",
+      "#low",
+      "#low"
+    ],
+    "consumes": [
+      "#low",
+      "#low",
+      "#low"
+    ],
+    "outputs": [
+      "ai_agent"
+    ],
+    "cost": 200,
+    "time": 60,
+    "stress": 0,
+    "idea": "automation",
+    "phase": 3,
+    "name_key": "recipes.r_ai.name"
+  },
+  {
+    "id": "r_platform",
+    "root": "server_cloud",
+    "inputs": [
+      "ai_agent",
+      "enterprise_license",
+      "enterprise_license"
+    ],
+    "consumes": [
+      "enterprise_license",
+      "enterprise_license"
+    ],
+    "outputs": [
+      "ai_platform"
+    ],
+    "time": 60,
+    "stress": 0,
+    "idea": "ai_platform",
+    "phase": 3,
+    "name_key": "recipes.r_platform.name"
+  },
+  {
+    "id": "r_buyout",
+    "root": "weakened_rival",
+    "inputs": [
+      "lawyer"
+    ],
+    "consumes": [
+      "weakened_rival"
+    ],
+    "outputs": [
+      "subsidiary"
+    ],
+    "effect": "buyout",
+    "time": 60,
+    "stress": 0,
+    "idea": "ma",
+    "phase": 3,
+    "name_key": "recipes.r_buyout.name"
+  },
+  {
+    "phase": 2,
+    "inputs": [
+      "senior_dev",
+      "million_contract"
+    ],
+    "name_key": "recipes.r_enterprise_lead.name",
+    "outputs": [],
+    "id": "r_enterprise_lead",
+    "root": "laptop_old",
+    "idea": "enterprise",
+    "consumes": [
+      "million_contract"
+    ],
+    "time": 80,
+    "cash": 100,
+    "stress": 2
+  },
+  {
+    "phase": 2,
+    "inputs": [
+      "#person",
+      "#person"
+    ],
+    "name_key": "recipes.r_brainstorm.name",
+    "outputs": [
+      "idea"
+    ],
+    "id": "r_brainstorm",
+    "root": "pantry",
+    "consumes": [],
+    "idea": "brainstorm",
+    "time": 30,
+    "stress": 0
+  }
+]

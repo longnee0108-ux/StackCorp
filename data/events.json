@@ -1,0 +1,1 @@
+{"viral":{"weight":2,"bad":false,"phase":1},"friday":{"weight":2,"bad":false,"phase":1},"price_war":{"weight":1,"bad":true,"phase":1},"drama":{"weight":1,"bad":true,"phase":1},"theft":{"weight":1,"bad":true,"phase":1},"poaching":{"weight":1,"bad":true,"phase":1},"outage":{"weight":1,"bad":true,"phase":3},"recession":{"weight":0.5,"bad":true,"phase":3}}

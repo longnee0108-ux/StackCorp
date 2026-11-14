@@ -1,0 +1,50 @@
+[
+  {
+    "id": "first_gig",
+    "condition": "gig",
+    "reward": "polish",
+    "name_key": "quests.first_gig.name"
+  },
+  {
+    "id": "first_prototype",
+    "condition": "prototype",
+    "reward": "close_deal",
+    "name_key": "quests.first_prototype.name"
+  },
+  {
+    "id": "first_polish",
+    "condition": "polished_prototype",
+    "reward": "pitch_deck",
+    "name_key": "quests.first_polish.name"
+  },
+  {
+    "id": "first_pitch",
+    "condition": "pitch_deck",
+    "reward": "series_a",
+    "name_key": "quests.first_pitch.name"
+  },
+  {
+    "id": "series_a",
+    "condition": "phase2",
+    "reward": "saas",
+    "name_key": "quests.series_a.name"
+  },
+  {
+    "id": "branch",
+    "condition": "branch",
+    "reward": "ipo",
+    "name_key": "quests.branch.name"
+  },
+  {
+    "id": "ipo",
+    "condition": "phase3",
+    "reward": "ma",
+    "name_key": "quests.ipo.name"
+  },
+  {
+    "id": "market",
+    "condition": "victory",
+    "reward": "",
+    "name_key": "quests.market.name"
+  }
+]

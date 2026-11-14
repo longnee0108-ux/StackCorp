@@ -1,0 +1,5 @@
+{
+"easy":{"start_cash":60,"cycle_days":8,"rent_mult":0.8,"wage_mult":0.9,"pack_mult":0.85,"sell_mult":1.1,"stress_mult":0.7,"cap_bonus":5,"evictions":3,"hospital_days":1.0,"bug_cap":4,"inspection_quarters":3,"detect":0.12,"event_min":2,"event_max":3,"bad_weight":0.65,"recession_stock":0.8,"recession_sales":0.9,"ipo_revenue":1200,"stock_target":450,"buyout_base":2500,"win_target":0.8},
+"medium":{"start_cash":45,"cycle_days":7,"rent_mult":1.0,"wage_mult":1.0,"pack_mult":1.0,"sell_mult":1.0,"stress_mult":1.0,"cap_bonus":2,"evictions":2,"hospital_days":1.5,"bug_cap":5,"inspection_quarters":2,"detect":0.2,"event_min":1.5,"event_max":2,"bad_weight":1.0,"recession_stock":0.7,"recession_sales":0.8,"ipo_revenue":1500,"stock_target":600,"buyout_base":3000,"win_target":0.5},
+"hard":{"start_cash":35,"cycle_days":6,"rent_mult":1.1,"wage_mult":1.05,"pack_mult":1.1,"sell_mult":0.98,"stress_mult":1.1,"cap_bonus":0,"evictions":2,"hospital_days":2.0,"bug_cap":5,"inspection_quarters":2,"detect":0.25,"event_min":1.25,"event_max":1.75,"bad_weight":1.15,"recession_stock":0.65,"recession_sales":0.8,"ipo_revenue":1700,"stock_target":750,"buyout_base":3500,"win_target":0.3}
+}
